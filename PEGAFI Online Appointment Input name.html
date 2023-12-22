@@ -41,7 +41,7 @@
 
           <h2>Choose a file</h2>
            <form action="action_form.php" method="get">
-            <input type="text" list="file" name="file"> 
+            <input type="text" list="file" name="file"required><br><br> 
             <datalist id="file">
               <option value="Grade Slip">
               <option value="Good Moral">
@@ -52,11 +52,11 @@
 
 
     <h3>Name:</h3>
-    <input type="name" placeholder="Enter Name">
+    <input type="name" placeholder="Enter Name"required><br><br>
 
     <h3>Strand:</h3>
     <form action="action_form.php" method="get">
-      <input type="text" list="strand" name="strand"> 
+      <input type="text" list="strand" name="strand"required><br><br> 
       <datalist id="strand">
         <option value="TVL-ICT">
         <option value="HUMSS">
@@ -66,7 +66,7 @@
     </form>
 
     <h3>Grade and Section:</h3>
-    <input type="grade and section" placeholder="Enter Grade and Section">
+    <input type="grade and section" placeholder="Enter Grade and Section"required><br><br>
     
     <h4>
         <button onclick="document.location='file:///C:/Users/elsam/Documents/POAal.html/nextpage.html/nextpage.html'">Next</button>
