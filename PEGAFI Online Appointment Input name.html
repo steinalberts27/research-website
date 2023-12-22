@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEGAFI ONLINE APPOINTMENT WEBSITE</title>
+</head>
+    <style>
+         body{text-align: center}
+         body{background: radial-gradient(maroon,black);}
+        h1{text-align: center;}
+         h1{font-size: 50px;}
+         h1{font-family: 'Times New Roman', Times, serif;} 
+         h1{color: white;}
+         h2{color: white;}
+         h3{color: white;}
+         h3{text-align: center;}
+        input{text-align: center;}
+
+
+        button{
+
+             background: linear-gradient(rgb(36, 10, 10),rgb(129,0,0));
+             text-align: center;
+             text-decoration: none;
+             font-size: 20px;
+             cursor: pointer;
+             box-shadow: 0,0,5px maroon, black 0,0,10px;
+            }
+            button{align-self: center;}
+  button:hover{
+            box-shadow: 0 0 5px maroon, 0 0 10px black, 0 0 15px maroon,
+             0 0 20px maroon;
+    
+            }
+
+    </style>
+<body>
+    <h1>PEGAFI ONLINE </h1>
+    <h1> APPOINTMENT</h1 >
+
+          <h2>Choose a file</h2>
+           <form action="action_form.php" method="get">
+            <input type="text" list="file" name="file"> 
+            <datalist id="file">
+              <option value="Grade Slip">
+              <option value="Good Moral">
+              <option value="Certificate of Enrollment">
+              <option value="Form 137">
+            </datalist>
+          </form> 
+
+
+    <h3>Name:</h3>
+    <input type="name" placeholder="Enter Name">
+
+    <h3>Strand:</h3>
+    <form action="action_form.php" method="get">
+      <input type="text" list="strand" name="strand"> 
+      <datalist id="strand">
+        <option value="TVL-ICT">
+        <option value="HUMSS">
+        <option value="TVL-HE">
+        <option value="STEM">
+      </datalist>
+    </form>
+
+    <h3>Grade and Section:</h3>
+    <input type="grade and section" placeholder="Enter Grade and Section">
+    
+    <h4>
+        <button onclick="document.location='file:///C:/Users/elsam/Documents/POAal.html/nextpage.html/nextpage.html'">Next</button>
+    </h4>
+    
+
+
+</body>
+</html>
