@@ -12,6 +12,15 @@
 @media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
+        form{
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width:400px;
+            heigh:500px;
+        }
          body{text-align: center}
          body{background: radial-gradient(maroon,black);}
         h1{text-align: center;}
@@ -43,19 +52,21 @@
 
     </style>
 <body>
+    <div>
+
     <h1>PEGAFI ONLINE </h1>
     <h1> APPOINTMENT</h1 >
 
           <h2>Choose a file</h2>
            <form action="action_form.php" method="get">
-            <input type="text" list="file" name="file"required><br><br> 
+            <input type="text" placeholder="Choose a file" list="file" name="file"required><br><br> 
             <datalist id="file">
               <option value="Grade Slip">
               <option value="Good Moral">
               <option value="Certificate of Enrollment">
               <option value="Form 137">
             </datalist>
-          </form> 
+          
 
 
     <h3>Name:</h3>
@@ -63,14 +74,14 @@
 
     <h3>Strand:</h3>
     <form action="action_form.php" method="get">
-      <input type="text" list="strand" name="strand"required><br><br> 
+      <input type="text" placeholder="Choose a File" list="strand" name="strand"required><br><br> 
       <datalist id="strand">
         <option value="TVL-ICT">
         <option value="HUMSS">
         <option value="TVL-HE">
         <option value="STEM">
       </datalist>
-    </form>
+    
 
     <h3>Grade and Section:</h3>
     <input type="grade and section" placeholder="Enter Grade and Section"required><br><br>
@@ -78,8 +89,8 @@
     <h4>
         <button onclick="document.location='file:///C:/Users/elsam/Documents/POAal.html/nextpage.html/nextpage.html'">Next</button>
     </h4>
-    
-
+    </form> 
+ </div>
 
 </body>
 </html>
