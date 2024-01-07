@@ -12,65 +12,69 @@
 @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
-       
-        img{align-items: center;}
 
-    p{text-align: center;}
-    p{font-size: 30;}
-    p{font-family: sans-serif;}
-    p{color: white;}
-        h1{font-size: 50;}
-    h1{font-family: sans-serif;}
-    h1{text-align: center;} 
-    h1{color: white;}
-        H1,H1{ width="align-self" height="align-self"}
-    h2 {text-align: center;}
-    h3{
-        text-align: center;}
-
+    p,h1,h2,h3{text-align: center;}
+    p,h1,h2{font-family: 'Franklin Gothic Medium', 'sans-serif';}
+    p,h1,h2{color: white;}
+    div{text-align: center;}
+    p {
+        margin-top: 5%;
+        margin-bottom: 1px;}
+    h1{
+        font-weight: 600;
+        max-width: 100;
+        font-size: auto;
+        margin-top: 0%;
+        margin-bottom: 10px;
     
-    
-   
-   button{
-    font-size: 20px;
-    background: linear-gradient(rgb(36, 10, 10),rgb(129,0,0));
-    box-shadow: 0,0,5px maroon, black 0,0,10px;
-    
-   }
-  button{align-self: center;}
+    }
+    .container{
+           margin:auto ; 
+           margin-top: 7%;
+           margin-bottom: 25;
+           margin-left: 25;
+           margin-right: 25;
+           width: 400px;
+           padding:10px;
+           background:rgba(0, 0, 0, 0.5);
+           border-radius: 10px; 
+          
+        }  
+    button{
+        font-size: 20px;
+        background:radial-gradient(rgb(36,10,10),rgb(129,0,0));
+        box-shadow: 0,0,5px maroon, black 0 0 10px;
+    }
    button:hover{
     box-shadow: 0 0 5px maroon, 0 0 10px black, 0 0 15px maroon,
     0 0 20px maroon;
-    
    }
-   body{border: width;}
-   body{background: radial-gradient(maroon,black);}
-   body{margin: auto;
-        height: auto
-    }
-    body{align-self: center;}
+   body{
+    align-self: center;
+    background: radial-gradient(maroon,black);
+    margin: 10 10 20 20;
+    padding: 20px 10 10 10;
+   }
+   
 </style>
 </head>
 <body>
+    <br> <br>
+    <div class="container">
+        <form>
     
-    <p> Welcome to</P>
-        <h1>PEGAFI ONLINE</h1>
-            <h1>APPOINTMENT</h1>
-        
-       
-   
-
-   
-   
-       
-         <h2>
-             <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/409963123_363090369700895_8294438522897932572_n.png?stp=dst-png_s206x206&_nc_cat=108&ccb=1-7&_nc_sid=510075&_nc_ohc=plU80fsBQXwAX-b6lms&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&cb_e2o_trans=q&oh=03_AdReQBFT41ZvCuq1OehQQpb-DWI5o0WP_655xX2IHimaxQ&oe=65AC7B1B" alt="PEGAFI ONLINE APPOINTMENT"  width="55%" maximum width="100%" height="55%" >
-         </h2>
-    
-   
-    <h3>
-         <button onclick="document.location='https://steinalberts27.github.io/research-website/PEGAFIONLINEAPPOINTMENT.html'">Next</button>
-    </h3>
-</div>
+             <div class="text1">
+                <p>Welcome to</p>
+               <H1> PEGAFI ONLINE APPOINTMENT</H1> 
+              </div>
+             <div class="imgBox">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/409963123_363090369700895_8294438522897932572_n.png?stp=dst-png_s206x206&_nc_cat=108&ccb=1-7&_nc_sid=510075&_nc_ohc=plU80fsBQXwAX-b6lms&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&cb_e2o_trans=q&oh=03_AdReQBFT41ZvCuq1OehQQpb-DWI5o0WP_655xX2IHimaxQ&oe=65AC7B1B" alt="PEGAFI ONLINE APPOINTMENT"  width="55%" maximum width="100%" height="55%" >
+             </div>
+          <br><br>
+          <div class="Button">
+               <button onclick="document.location='https://steinalberts27.github.io/research-website/PEGAFIONLINEAPPOINTMENT.html'"> Next</button>
+           </div>
+        </form>
+    </div>
 </body>
 </html>
