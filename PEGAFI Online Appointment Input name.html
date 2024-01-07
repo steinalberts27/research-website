@@ -6,22 +6,39 @@
     <title>PEGAFI ONLINE APPOINTMENT WEBSITE</title>
 </head>
     <style>
-         @media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
-@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
-@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
-@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
-         body{text-align: center}
-         body{background: radial-gradient(maroon,black);}
-        h1{text-align: center;}
-         h1{font-size: 50;}
-        h1{ width="align-self" height="align-self"}
-         h1{font-family: sans-serif;} 
-         h1{color: white;}
-         h2{color: white;}
-         h3{color: white;}
-         h3{text-align: center;}
+        @media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+        @media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+        @media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+        @media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+        @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+        @media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+        body{
+            text-align: center;
+            background: radial-gradient(maroon,black);
+        }
+        .container{
+           margin:auto ; 
+           width: 400px;
+           padding:10px;
+           background:rgba(0, 0, 0, 0.5);
+           border-radius: 10px; 
+          
+        }  
+    
+        
+        h1{color: white;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 60;
+        }
+        
+        h2,h3{
+            text-align: center;
+            color: rgb(253, 253, 253);
+            font-size: 50;
+            font-family: 'sans-serif';
+        }
         input{text-align: center;}
 
 
@@ -30,58 +47,71 @@
              background: linear-gradient(rgb(36, 10, 10),rgb(129,0,0));
              text-align: center;
              text-decoration: none;
-             font-size: 20px;
+             font-size: 15px;
              cursor: pointer;
              box-shadow: 0,0,5px maroon, black 0,0,10px;
             }
+
             button{align-self: center;}
-  button:hover{
+
+            button:hover{
             box-shadow: 0 0 5px maroon, 0 0 10px black, 0 0 15px maroon,
              0 0 20px maroon;
     
             }
+  
+
+            
 
     </style>
 <body>
-    <div>
+    <br><br>
 
-    <h1>PEGAFI ONLINE </h1>
-    <h1> APPOINTMENT</h1 >
+    <div class="container">
+        <form>
+            <h1>PEGAFI ONLINE APPOINTMENT</h1> <br>
 
-          <h2>Choose a file</h2>
-           <form action="action_form.php" method="get">
-            <input type="text" placeholder="Choose a file" list="file" name="file"required><br><br> 
-            <datalist id="file">
-              <option value="Grade Slip">
-              <option value="Good Moral">
-              <option value="Certificate of Enrollment">
-              <option value="Form 137">
-            </datalist>
-          </form> 
+            <h2>Choose a file</h2>
+            <form action="action_form.php" method="get">
+             <input type="text" placeholder="Choose a file" list="file" name="file"required><br><br> 
+             <datalist id="file">
+               <option value="Grade Slip">
+               <option value="Good Moral">
+               <option value="Certificate of Enrollment">
+               <option value="Form 137">
+             </datalist>
+           </form> 
+ 
+ 
+     <h3>Name:</h3>
+     <input type="name" placeholder="Enter Name"required><br><br>
+ 
+     <h3>Strand:</h3>
+     <form action="action_form.php" method="get">
+       <input type="text" placeholder="Strand" list="strand" name="strand"required><br><br> 
+       <datalist id="strand">
+         <option value="TVL-ICT">
+         <option value="HUMSS">
+         <option value="TVL-HE">
+         <option value="STEM">
+       </datalist>
+     </form> 
+ 
+     <h3>Grade and Section:</h3>
+     <input type="grade and section" placeholder="Enter Grade and Section"required><br><br>
+     
+<br><br>
 
+     <div class="Button">
+    <button onclick="document.location='https://steinalberts27.github.io/research-website/PEGAFI%20Online%20Appointment%20Input%20name.html'">Next</button>
 
-    <h3>Name:</h3>
-    <input type="name" placeholder="Enter Name"required><br><br>
+    <br><br> <br>
+</div>
+  </div>
+        
 
-    <h3>Strand:</h3>
-    <form action="action_form.php" method="get">
-      <input type="text" placeholder="Choose a File" list="strand" name="strand"required><br><br> 
-      <datalist id="strand">
-        <option value="TVL-ICT">
-        <option value="HUMSS">
-        <option value="TVL-HE">
-        <option value="STEM">
-      </datalist>
-    </form> 
-
-    <h3>Grade and Section:</h3>
-    <input type="grade and section" placeholder="Enter Grade and Section"required><br><br>
-    
-    <h4>
-        <button onclick="document.location='file:///C:/Users/elsam/Documents/POAal.html/nextpage.html/nextpage.html'">Next</button>
-    </h4>
-    
- </div>
-
+        </form>
+        
+ 
 </body>
 </html>
